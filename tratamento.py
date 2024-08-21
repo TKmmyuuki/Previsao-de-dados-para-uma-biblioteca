@@ -170,6 +170,6 @@ for valor in range(2):
 plotar_grafico_dispersao(data, "foi_renovado", "dias_de_emprestimo", 6)
 
 # CONSIDERAÇÕES FINAIS
-df_final.isna().sum()
+data.isna().sum()
 output_file_path = 'df_s_out.csv'
-df_final.to_csv(output_file_path, index=False)
+data.to_csv(output_file_path, index=False)

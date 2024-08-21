@@ -182,9 +182,7 @@ df_completo = df_completo.dropna(subset=['codigo_barras'])
 colunas_para_separar = ['codigo_barras']
 transformado = df[colunas_para_separar]
 for column in transformado.columns:
-    # Check if the column is of categorical type
     if transformado[column].dtype == 'object':
-        # Apply label encoding to the column
         df[column] = label_encoder.fit_transform(df[column])
 df.info()
 df_final = pd.concat([df, df_completo], ignore_index=True)
