@@ -196,3 +196,6 @@ output_file_path = 'df_arrumado.csv'
 df_final.to_csv(output_file_path, index=False)
 data = pd.read_csv('df_arrumado.csv')
 data.info()
+
+
+#teste teste
